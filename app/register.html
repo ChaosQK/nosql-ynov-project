@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/css/siimple.min.css">
+    <link rel='stylesheet' href="/css/style.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.cdnfonts.com/css/brain-wants" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <a href="/" class="mdi mdi-arrow-left-circle register-back"></a>
+    <div class="register-background-parent">
+        <form method="POST" action="/register/" class="register-background">
+            <div class="page-message"></div>
+            <div class="register-text">INSCRIPTION</div>
+            
+            <div class="register-elements">
+                <div class="single-element">
+                    <label class="siimple-label label-text-register">Email : </label><br>
+                    <input type="email" name="register-email" class="siimple-input siimple-input--fluid input-register" placeholder="votre@email.com" required>
+                </div>
+
+                <div class="single-element">
+                    <label class="siimple-label label-text-register">Pseudonyme : </label><br>
+                    <input type="text" name="register-username" class="siimple-input siimple-input--fluid input-register" placeholder="Pseudo92" required>
+                </div>
+
+                <div class="multiple-elements">
+                    <div class="element-of-mutiple">
+                        <label class="siimple-label label-text-register">Mot de passe : </label><br>
+                        <input type="password" name="register-password" class="siimple-input siimple-input--fluid input-register" placeholder="Mot de passe" required>
+                    </div>
+    
+                    <div class="element-of-mutiple" style="margin-left: 8px;">
+                        <label class="siimple-label label-text-register">Confirmez : </label><br>
+                        <input type="password" name="register-confirm" class="siimple-input siimple-input--fluid input-register" placeholder="Confirmez MDP" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttom-elements">
+                <div class="undertext-register">Déjà inscrit ? <a href="/login/">Connectez-vous !</a></div>
+                <button type="submit" class="siimple-btn register-button">S'inscrire</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

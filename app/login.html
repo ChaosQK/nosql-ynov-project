@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/css/siimple.min.css">
+    <link rel='stylesheet' href="/css/style.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.cdnfonts.com/css/brain-wants" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <a href="/" class="mdi mdi-arrow-left-circle login-back"></a>
+    <div class="login-background-parent">
+        <form method="POST" action="/login/" class="login-background">
+            <div class="page-message"></div>
+            <div class="login-text">CONNEXION</div>
+            
+            <div class="login-elements">
+                <div class="single-element">
+                    <label class="siimple-label label-text-login">Votre Email : </label><br>
+                    <input type="email" name="login-email" class="siimple-input siimple-input--fluid input-login" placeholder="votre@email.com" required>
+                </div>
+
+                <div class="single-element">
+                    <label class="siimple-label label-text-login">Votre mot de passe : </label><br>
+                    <input type="password" name="login-password" class="siimple-input siimple-input--fluid input-login" placeholder="Mot de passe" required>
+                </div>
+            </div>
+
+            <div class="buttom-elements">
+                <div class="undertext-login">Pas inscrit ? <a href="/register/">Inscrivez-vous !</a></div>
+                <button type="submit" class="siimple-btn login-button">Se connecter</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

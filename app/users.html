@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/siimple.min.css">
+    <link rel='stylesheet' href="/css/style.css">
+    <link rel='stylesheet' href="/css/users.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.cdnfonts.com/css/brain-wants" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  </div>
+    <div class="main-content">
+      <!-- Top navbar -->
+      <div class="as-navbar">
+        <div class="as-navbar-left">
+          <a href="/">ACCUEIL</a>
+        </div>
+          <div class="as-navbar-right">
+              <a href="/profile/" class="mdi mdi-account"></a>
+              <a href="/logout/" class="mdi mdi-logout"></a>
+          </div>
+      </div>
+
+      <div class="as-profile-parent">
+        <form class="as-profile" action="/profile/" method="POST">
+          <h6 class="heading-small text-muted mb-4">Mes informations</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-username">Pseudonyme</label>
+                  <input type="text" id="input-username" name="username" class="siimple-input siimple-input--fluid input-register" placeholder="Votre pseudonyme">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-email">E-mail</label>
+                  <input type="email" id="input-email" class="siimple-input siimple-input--fluid input-register" placeholder="Votre e-mail" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-first-name">Prénom</label>
+                  <input type="text" id="input-first-name" name="prenom" class="siimple-input siimple-input--fluid input-register" placeholder="Saisir votre prenom">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-last-name">Nom</label>
+                  <input type="text" id="input-last-name" name="nom" class="siimple-input siimple-input--fluid input-register" placeholder="Saisir votre nom">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <!-- Address -->
+          <h6 class="heading-small text-muted mb-4">Contact</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-address">Adresse</label>
+                  <input id="input-address" name="adresse" class="siimple-input siimple-input--fluid input-register" placeholder="Saisir votre adresse" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-city">Ville</label>
+                  <input type="text" id="input-city" name="ville" class="siimple-input siimple-input--fluid input-register" placeholder="City">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-country">Pays</label>
+                  <input type="text" id="input-country" name="pays" class="siimple-input siimple-input--fluid input-register" placeholder="Country">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-country">Code postal</label>
+                  <input type="number" id="input-postal-code" name="code_postal" class="siimple-input siimple-input--fluid input-register" placeholder="Saisir le code postal">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <!-- Description -->
+          <h6 class="heading-small text-muted mb-4">Commentaire</h6>
+          <div class="pl-lg-4">
+            <div class="form-group focused">
+              <label class="form-control-label" for="input-username">A propos de moi</label>
+              <textarea rows="3" id="input-about" name="about" class="siimple-input siimple-input--fluid input-register" placeholder="Quelques mots a propos de vous ?"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="siimple-btn save-button">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+    <script src="/js/users.js"></script>
+  </body>
+  </html>
